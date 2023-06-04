@@ -1,0 +1,31 @@
+h1 {color:rgba(215, 183, 125, 0.998);
+font-family:algerian;
+font-size: 60px;
+text-align:center;
+background-color: black;}
+
+p {color:whitesmoke;
+font-family: nirmala ui;
+font-style: oblique;
+font-size: 15px;
+text-align: center;
+line-height: 0.1cm;}
+
+.boton {
+    border: 1px solid rgba(215, 183, 125, 0.998); /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: rgba(215, 183, 125, 0.998); /*color botón*/
+    color:black; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    }
+
+.h1 {
+    background: #1F1F1F;
+    height: 30px;
+    display: none;
+    font-family: 'Amatic SC', cursive;
+!important}
+  

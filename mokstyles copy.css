@@ -1,0 +1,296 @@
+* { box-sizing: border-box; }
+
+html{scroll-behavior: smooth;}
+
+body {
+    margin: 0%;
+    font-family: 'Cinzel', serif ;
+    background-color:rgb(241, 236, 227);
+}
+
+h1{font-size: 3em;}
+h2{font-size: 2.7em;}
+h3{font-size: 1em;}
+p{font-size: 2em;}
+ul{list-style: none}
+li{font-size: 1.25em;}
+
+header{
+  background-color: rgb(241, 236,227);
+  width:100%;
+  z-index: 70;
+  margin: auto;
+  padding: 15px 15px;
+}
+
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
+button{
+  font-family: 'Cinzel', serif ;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(221, 176, 122) ;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: black;
+  background-color: rgb(221, 176, 122);
+}
+
+button:hover{
+  background-color: antiquewhite;
+}
+
+#navbar ul li {
+  display: inline-block;
+}
+
+header .logo{
+margin: 0;
+padding: 15px 15px;
+font-weight: bold;
+color: rgb(213, 138, 45);
+font-size: 2.5em;
+text-align: center;
+}
+
+header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header p{
+  padding: 5px 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: medium;
+}
+
+header a{
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: small;
+}
+
+header a:hover{
+  color: rgb(213, 138, 45);
+}
+
+#ppal .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  font-size: xx-large;
+  background-image: linear-gradient(
+    0deg, rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+  ),url("img/choi.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size:100%;
+  background-position: center ;
+}
+
+#ppal h3{
+  font-family: 'Cormorant', serif;
+  font-size: 25px;
+}
+
+#ppal p{
+  font-family: 'Cormorant', serif;
+  font-size: 25px;
+}
+
+#Instructor p{
+  font-family: 'Cormorant', serif;
+  font-size: 20px;
+}
+
+#Instructor .container{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 200px 12px;
+  background-image: linear-gradient(
+    0deg, rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ),url("img/fede.png");
+  color: white;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 30%;
+  background-position: right center;
+  
+}
+
+#form .container p{
+  font-size: 18px; 
+}
+
+#clases {}
+
+#clases .container {
+  padding: 50px 0px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+#clases h3 {
+  color: rgb(221, 176, 122) ;
+}
+#clases p {
+  font-family: 'Cormorant', serif;
+  font-size: 20px;
+}
+
+#contacto .container{
+text-align: center;
+padding: 70px 12px;
+}
+
+#contacto li{
+  margin: 12px 0px;
+ }
+
+footer p{
+  font-size: 15px;
+}
+
+
+
+.slide {
+  position: static;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.slide-inner {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 90vh;
+}
+.slide-open:checked + .slide-item {
+  position: static;
+  opacity: 100;
+}
+.slide-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+.slide-item img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.slide-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+.slide-control.prev {
+  left: 2%;
+}
+.slide-control.next {
+  right: 2%;
+}
+.slide-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3,
+#slide-4:checked ~ .control-4,
+#slide-5:checked ~ .control-5,
+#slide-6:checked ~ .control-6,
+#slide-7:checked ~ .control-7 {
+                display: block;
+            }
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+                padding: 0;
+                position: absolute;
+                bottom: 2%;
+                left: 0;
+                right: 0;
+                text-align: center;
+                z-index: 10;
+            }
+            .slide-indicador li {
+                display: inline-block;
+                margin: 0 5px;
+            }
+            .slide-circulo {
+                color: #828282;
+                cursor: pointer;
+                display: block;
+                font-size: 35px;
+            }
+            .slide-circulo:hover {
+                color: #aaaaaa;
+            }
+
+      #slide-1:checked ~ .control-1 ~ .slide-indicador 
+            li:nth-child(1) .slide-circulo,
+      #slide-2:checked ~ .control-2 ~ .slide-indicador 
+             li:nth-child(2) .slide-circulo,
+      #slide-3:checked ~ .control-3 ~ .slide-indicador 
+             li:nth-child(3) .slide-circulo,
+      #slide-4:checked ~ .control-4 ~ .slide-indicador 
+             li:nth-child(4) .slide-circulo,
+      #slide-5:checked ~ .control-5 ~ .slide-indicador 
+             li:nth-child(5) .slide-circulo,
+      #slide-6:checked ~ .control-6 ~ .slide-indicador 
+             li:nth-child(6) .slide-circulo,
+      #slide-7:checked ~ .control-7 ~ .slide-indicador 
+             li:nth-child(7) .slide-circulo {
+           color: #428bca;
+       }
+       #titulo {
+           width: 100%;
+           position: absolute;
+           padding: 0px;
+           margin: 0px auto;
+           text-align: center;
+           font-size: 27px;
+           color: rgba(255, 255, 255, 1);
+           font-family: 'Open Sans', sans-serif;
+           z-index: 9999;
+           text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+                -1px 0px 2px rgba(255, 255, 255, 0);
+       }
